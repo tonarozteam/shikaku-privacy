@@ -27,7 +27,7 @@ The existing `index.html` currently makes broad statements about local gameplay 
 - [ ] Android manifest and Unity Player settings: permissions, advertising ID permission, backup flags, target audience-related configuration.
 - [ ] Search source for network requests, analytics, telemetry, crash reporting, attribution, identifiers, and third-party endpoints.
 - [ ] Save implementation: PlayerPrefs, files, save fields, backup/cloud behavior, deletion behavior.
-- [ ] Settings UI: identify the existing UMP privacy-options action and add a separate policy link using established UI conventions.
+- [ ] Settings UI: implement in-app About Us and Contact & Support screens using established UI conventions; only the Privacy Policy item opens the external policy URL. Keep the existing UMP privacy-options action separate.
 - [ ] Tests: add a focused test or validation that the policy URL is non-empty HTTPS and the policy action remains distinct from the UMP privacy-options action. Add UI behavior coverage if the current test setup supports it.
 
 ## Publisher confirmations needed
@@ -43,7 +43,7 @@ The existing `index.html` currently makes broad statements about local gameplay 
 
 1. Keep the existing website and update `index.html` only after source verification; use the existing GitHub Pages URL if its public reachability is verified.
 2. Keep `app-ads.txt` separate from the privacy policy.
-3. Add a distinct “Privacy Policy” action in the existing Unity Settings UI that opens the verified HTTPS URL. Preserve the current UMP privacy-options control and all consent gating.
+3. Add in-app About Us and Contact & Support screens. The Contact screen should display the support email and may offer an explicit mailto action. Only the Privacy Policy item should open the verified HTTPS policy URL. Preserve the current UMP privacy-options control and all consent gating.
 4. Add a focused test/documentation update; do not change unrelated gameplay, ads, signing, package identity, or release configuration.
 5. Verify the live policy URL and reconcile it with Google Play Data safety before claiming compliance.
 
