@@ -7,17 +7,12 @@
 
 This document is a working checklist, not a legal opinion or a claim that the app has passed Google Play review. The Unity project and the exact release build must be audited before final declarations are made.
 
-## Public pages created in this repository
+## Public page in this repository
 
 - Privacy Policy: `index.html`
-- About Shikaku: `ABOUT.html`
-- Contact & Support: `SUPPORT.html`
+- Public URL: https://tonarozteam.github.io/shikaku-privacy/
 
-After GitHub Pages publishes the new files, expected URLs are:
-
-- https://tonarozteam.github.io/shikaku-privacy/
-- https://tonarozteam.github.io/shikaku-privacy/ABOUT.html
-- https://tonarozteam.github.io/shikaku-privacy/SUPPORT.html
+**About Us** and **Contact & Support** must be in-app Unity screens, not external website pages. Only the Privacy Policy item should open the external policy URL. The Contact & Support screen may offer an explicit button to open the user's email application via `mailto:tunarozteam@gmail.com`.
 
 ## Required app and SDK audit
 
